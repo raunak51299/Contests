@@ -1,0 +1,1 @@
+{"name":"Local: jumping_frog_with_k","url":"c:\\Users\\Raunak\\Desktop\\DSA\\algo\\jumping_frog_with_k.cpp","tests":[{"id":1650006716375,"input":"10 4\n40 10 20 70 80 10 20 70 80 60","output":"40"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Raunak\\Desktop\\DSA\\algo\\jumping_frog_with_k.cpp","group":"local","local":true}

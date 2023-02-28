@@ -1,0 +1,1 @@
+{"name":"Local: Just Like Mob!","url":"c:\\Users\\LENOVO\\Desktop\\New folder\\Just Like Mob!.cpp","tests":[{"id":1669214717837,"input":"3\n2 1 4 17\n3 7 5 50\n3 7 5 61","output":"YES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\LENOVO\\Desktop\\New folder\\Just Like Mob!.cpp","group":"local","local":true}

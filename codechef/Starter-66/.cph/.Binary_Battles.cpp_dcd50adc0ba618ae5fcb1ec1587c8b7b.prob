@@ -1,0 +1,1 @@
+{"name":"Local: Binary_Battles","url":"c:\\Users\\LENOVO\\Desktop\\New folder\\Binary_Battles.cpp","tests":[{"id":1669214213180,"input":"4\n4 10 5\n16 30 5\n32 45 15\n1024 23 9","output":"25\n135\n285\n311"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\LENOVO\\Desktop\\New folder\\Binary_Battles.cpp","group":"local","local":true}
