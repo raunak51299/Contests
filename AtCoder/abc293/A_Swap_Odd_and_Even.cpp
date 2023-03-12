@@ -24,38 +24,29 @@
         cout << a[i] << " ";
 #define Mod 1000000007
 using namespace std;
-
+ 
 void solve()
 {
-    int N;
-    cin >> N;
-    vi freq(N + 1, 0);
-    for (int i = 0; i < N; i++)
+    string s;
+    cin >> s;
+    for(int i = 0; i < s.size() - 1; i+=2)
     {
-        int x;
-        cin >> x;
-        if (x <= N)
-            freq[x]++;
-    }
-    ll ans = 0, cur = 1;
-    for (int i = 1; i <= N; i++)
-    {
-        cur = (cur*freq[i]) % Mod;
-        ans = (ans+cur) % Mod;
-    }
-    cout << ans << endl;
-}
+        char temp = s[i];
+        s[i] = s[i+1];
+        s[i+1] = temp;
 
+    }
+    cout << s << endl;
+
+}
+ 
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int T;
-    cin >> T;
-    while (T--)
-    {
+    //int t; cin >> t;
+    //while(t--)
         solve();
-    }
     return 0;
 }

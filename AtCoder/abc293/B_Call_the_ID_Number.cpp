@@ -24,26 +24,50 @@
         cout << a[i] << " ";
 #define Mod 1000000007
 using namespace std;
+/*
+There are
+N people whose IDs are
+1,
+2,
+…, and
+N.
 
+Each of person
+1, person
+2,
+…, and person
+N performs the following action once in this order:
+
+If person
+i's ID has not been called out yet, call out person
+A
+i
+​
+ 's ID.
+Enumerate the IDs of all the people whose IDs are never called out until the end in ascending order.
+*/
 void solve()
 {
-    int N;
-    cin >> N;
-    vi freq(N + 1, 0);
-    for (int i = 0; i < N; i++)
+    int n;
+    cin >> n;
+    vi v(n, 0);
+    vector<int> ans;
+    rep(i, 0, n - 1)
     {
-        int x;
-        cin >> x;
-        if (x <= N)
-            freq[x]++;
+        int a;
+        cin >> a;
+        if (v[i] == 0)
+            v[a - 1]++;
     }
-    ll ans = 0, cur = 1;
-    for (int i = 1; i <= N; i++)
+    rep(i, 0, n - 1)
     {
-        cur = (cur*freq[i]) % Mod;
-        ans = (ans+cur) % Mod;
+        if (v[i] == 0)
+            ans.pb(i + 1);
     }
-    cout << ans << endl;
+    cout << ans.size() << endl;
+    for (auto x : ans)
+        cout << x << " ";
+    cout << endl;
 }
 
 int main()
@@ -51,11 +75,8 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int T;
-    cin >> T;
-    while (T--)
-    {
-        solve();
-    }
+    // int t; cin >> t;
+    // while(t--)
+    solve();
     return 0;
 }
